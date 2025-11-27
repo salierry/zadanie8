@@ -1,0 +1,429 @@
+.layout {
+    min-height: 100vh;
+  }
+  
+  .header {
+    background: #001529;
+    height: auto;
+    min-height: 80px;
+    padding: 0 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: relative;
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .site-title {
+    color: white !important;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 12px;
+  }
+  
+  .desktop-menu {
+    background: transparent;
+    border-bottom: none;
+    flex: 1;
+    justify-content: flex-end;
+  }
+  
+  .mobile-menu {
+    display: none;
+    background: transparent;
+    border: none;
+    width: 100%;
+  }
+  
+  .content {
+    background: #f0f2f5;
+    padding: 20px;
+    min-height: calc(100vh - 160px);
+  }
+  
+  .sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .section {
+    margin-bottom: 0;
+  }
+  
+  .section-content {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    color: #262626;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .responsive-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .map-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .image-map {
+    margin: 16px 0;
+    text-align: center;
+  }
+  
+  a {
+    color: #1890ff;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  
+  a:hover {
+    color: #40a9ff;
+    text-decoration: underline;
+  }
+  
+  .custom-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+  
+  .custom-form .ant-form-item-label > label {
+    font-weight: 500;
+  }
+  
+  .footer {
+    text-align: center;
+    background: #001529;
+    color: white;
+    padding: 16px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      padding: 0 16px;
+    }
+    
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .site-title {
+      font-size: 18px;
+    }
+    
+    .logo {
+      height: 35px;
+    }
+    
+    .desktop-menu {
+      display: none;
+    }
+    
+    .mobile-menu {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .content {
+      padding: 16px;
+    }
+    
+    .section-content {
+      padding: 16px;
+    }
+    
+    .section h2 {
+      font-size: 18px;
+    }
+    
+    .table-container {
+      margin: 0 -16px;
+      padding: 0 16px;
+    }
+    
+    .sections-container {
+      flex-direction: column;
+    }
+    
+    .table-section {
+      order: 1;
+    }
+    
+    .links-section {
+      order: 2;
+    }
+    
+    .form-section {
+      order: 3;
+    }
+    
+    .custom-form .ant-form-item {
+      margin-bottom: 12px;
+    }
+    
+    .custom-form .ant-radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .custom-form .ant-select {
+      width: 100%;
+    }
+  
+    .responsive-image, .map-image {
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .sections-container {
+      flex-direction: column;
+    }
+    
+    .table-section {
+      order: 2;
+    }
+    
+    .links-section {
+      order: 1;
+    }
+    
+    .form-section {
+      order: 3;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .content {
+      padding: 12px;
+    }
+    
+    .section-content {
+      padding: 12px;
+    }
+    
+    .site-title {
+      font-size: 16px;
+    }
+  }
+  
+  ol, ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  
+  .custom-form .ant-btn-primary {
+    background: #1890ff;
+    border-color: #1890ff;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .custom-form .ant-btn-primary:hover {
+    background: #40a9ff;
+    border-color: #40a9ff;
+  }
+
+.calculator-section {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+  }
+  
+  .calculator-section .ant-card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .calculator-section .ant-form-item-label > label {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .calculator-section .ant-input,
+  .calculator-section .ant-select-selector {
+    border-radius: 6px;
+  }
+  
+  .calculator-section .ant-btn {
+    border-radius: 6px;
+    height: 40px;
+    font-weight: 500;
+  }
+  
+  .calculator-section .ant-alert {
+    border-radius: 6px;
+  }
+  
+  @media (max-width: 768px) {
+    .calculator-section {
+      padding: 16px;
+      margin: 16px;
+    }
+    
+    .calculator-section .ant-btn {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+
+  .calculator-section .ant-card {
+    margin-bottom: 16px;
+  }
+  
+  .calculator-section .ant-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .calculator-section .ant-radio-wrapper {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .calculator-section .ant-radio-group {
+      gap: 12px;
+    }
+    
+    .calculator-section .ant-select {
+      width: 100% !important;
+    }
+  }
+
+  /* Стили для модального окна обратной связи */
+  .feedback-modal .ant-modal-content {
+    border-radius: 8px;
+  }
+
+  /* На маленьких экранах делаем модал почти полноэкранным */
+  @media (max-width: 480px) {
+    .feedback-modal .ant-modal {
+      top: 0 !important;
+    }
+    .feedback-modal .ant-modal-content {
+      height: 100vh;
+      border-radius: 0;
+    }
+    .feedback-modal .ant-modal-body {
+      max-height: calc(100vh - 100px);
+      overflow-y: auto;
+    }
+  }
+
+  .feedback-button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: #001529 !important; /* темно-синий шапки */
+    border-color: #001529 !important;
+    color: #f0f2f5 !important;
+    height: 40px;
+    font-weight: 500;
+    box-shadow: none !important;
+    background-image: none !important;
+    border-radius: 4px;
+    padding: 0 14px;
+    outline: none;
+  }
+
+  .feedback-button:hover,
+  .feedback-button:focus {
+    background: #001529 !important;
+    border-color: #001529 !important;
+    color: #f0f2f5 !important;
+    box-shadow: none !important;
+  }
+
+  /* на мобильных сохраняем высоту и цвет */
+  @media (max-width: 768px) {
+    .feedback-button {
+      height: 36px;
+      padding: 0 10px;
+      font-size: 14px;
+    }
+  }
+
+  /* Поведение пунктов меню в шапке — одинаково для всех пунктов, включая "Обратная связь" */
+  .desktop-menu .ant-menu-item,
+  .mobile-menu .ant-menu-item {
+    color: #f0f2f5; /* текст как у шапки */
+    background: transparent;
+  }
+  
+  /* hover — немного светлее (как у других кнопок) */
+  .desktop-menu .ant-menu-item:hover,
+  .mobile-menu .ant-menu-item:hover,
+  .desktop-menu .ant-menu-item:hover a,
+  .mobile-menu .ant-menu-item:hover a {
+    background: rgba(255,255,255,0.06);
+    color: #ffffff;
+  }
+  
+  /* выбранный / active пункт — голубой фон, белый текст (как у других кнопок) */
+  .desktop-menu .ant-menu-item-selected,
+  .desktop-menu .ant-menu-item-active,
+  .mobile-menu .ant-menu-item-selected,
+  .mobile-menu .ant-menu-item-active,
+  .desktop-menu .ant-menu-item-selected a,
+  .mobile-menu .ant-menu-item-selected a {
+    background: #1890ff !important;
+    color: #ffffff !important;
+  }
+
+  /* Убедиться, что внутренняя ссылка не задаёт свой фон и занимает всю область */
+  .desktop-menu .ant-menu-item a,
+  .mobile-menu .ant-menu-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+  }
